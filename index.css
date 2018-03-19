@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+.main {
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45px;
+    font-size: 30px;
+    font-style: italic;
+    color: white;
+    background-color: #7485c4;
+    margin-bottom: 30px;
+}
+
+.create {
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #7485c4;
+    border-radius: 5px;
+    background-color: #dbd5ff
+}
+
+.create a {
+    color: #191970;
+    text-transform: uppercase;
+}
+
+.create a h4 {
+    margin: 5px 0;
+}
