@@ -38,3 +38,56 @@
 .create a h4 {
     margin: 5px 0;
 }
+
+.detail {
+    padding: 10px;
+    margin: 5px;
+}
+
+.detail h4 {
+    padding: 10px 0;
+}
+
+.detail a {
+    margin: 10px;
+    display: inline-block;
+    padding: 10px;
+    border: 1px solid #7485c4;
+}
+
+.detail a:hover {
+    border: 1px solid white;
+    background-color: #7485c4;
+    color: white;
+}
+
+.detail h4,
+.detail a,
+.detail h3 {
+    color: #191970;
+    text-transform: uppercase;
+    margin: 5px 0;
+}
+
+.detail h3 {
+    margin-top: 35px;
+}
+
+
+
+.comm{
+    margin: 3px 10px;
+    padding: 0 0 0 8px;
+}
+
+.author{
+    font-size: 20px;
+    font-style: italic;
+    text-align: center; 
+}
+
+
+.author p{
+    margin: 4px 0;
+    
+}

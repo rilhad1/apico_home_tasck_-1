@@ -1,11 +1,7 @@
 const POSTS = `https://jsonplaceholder.typicode.com/posts/`;
 const USERS = `https://jsonplaceholder.typicode.com/users/`;
-
-
 const post = document.getElementById('root');
 const comment = document.getElementById('forComm');
-
-getPost(POSTS, post, postCreate);
 
 window.addEventListener('hashchange', function() {
     let way = location.hash
@@ -32,9 +28,8 @@ function postCreate(post) {
 
 function postDetail(post) {
     return `<div class="detail">
-                <h3>Post</h3>
                 <h4>${post.body}</h4>
-                <a href="#/authorId=${post.userId}"><p>Author</p></a>
+                <a href="#/authorId=${post.userId}">Info about Author</a>
                 <h3>Comments</h3>
             </div>`;
 }
@@ -42,8 +37,6 @@ function postDetail(post) {
 function comm(comments) {
     return `<p class="comm">${comments.body}</p>`
 }
-
-
 
 function author(author) {
     return `<div class="author">
@@ -54,6 +47,8 @@ function author(author) {
                 <p>${author.address.suite} ${author.address.street}, ${author.address.city}</p>
             </div>`;
 }
+
+getPost(POSTS, post, postCreate);
 
 function getPost(url, selectDiv, func) {
     fetch(url)
