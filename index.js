@@ -56,7 +56,7 @@ function getPost(url, selectDiv, template) {
         .then(json => {
             if (Array.isArray(json)) {
                 selectDiv.innerHTML = json.map(function(item) {
-                    return func(item);
+                    return template(item);
                 }).join('')
             }
             else {
