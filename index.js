@@ -50,7 +50,7 @@ function author(author) {
 
 getPost(POSTS, post, postCreate);
 
-function getPost(url, selectDiv, func) {
+function getPost(url, selectDiv, template) {
     fetch(url)
         .then(response => response.json())
         .then(json => {
@@ -60,7 +60,7 @@ function getPost(url, selectDiv, func) {
                 }).join('')
             }
             else {
-                selectDiv.innerHTML = func(json);
+                selectDiv.innerHTML = template(json);
             }
         })
 }
